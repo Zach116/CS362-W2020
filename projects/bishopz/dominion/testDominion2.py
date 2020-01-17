@@ -35,7 +35,7 @@ trash = []
 # Set up test data
 
 
-# Contruct the player objects
+# Construct the player objects
 players = testUtility.playerInit(player_names)
 
 # Play the game

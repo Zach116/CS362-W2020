@@ -33,7 +33,7 @@ supply = testUtility.supplyInit(box, nV, nC, len(player_names))
 trash = []
 
 # Set up test data
-
+supply["Province"] = [Dominion.Province()] * -1
 
 # Contruct the player objects
 players = testUtility.playerInit(player_names)
