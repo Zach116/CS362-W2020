@@ -42,7 +42,7 @@ def boxInit(nV):
     box["Throne Room"] = [Dominion.Throne_Room()] * 10
     return box
 
-def supplyInit(box, nV, nC):
+def supplyInit(box, nV, nC, playerCount):
     #Pick 10 cards from box to be in the supply.
     boxlist = [k for k in box]
     random.shuffle(boxlist)
@@ -50,7 +50,7 @@ def supplyInit(box, nV, nC):
     supply = defaultdict(list,[(k,box[k]) for k in random10])
 
     # The supply always has these cards
-    supply["Copper"] = [Dominion.Copper()] * (60 - len(player_names) * 7)
+    supply["Copper"] = [Dominion.Copper()] * (60 - playerCount * 7)
     supply["Silver"] = [Dominion.Silver()] * 40
     supply["Gold"] = [Dominion.Gold()] * 30
     supply["Estate"] = [Dominion.Estate()] * nV
@@ -69,6 +69,7 @@ def playerInit(player_names):
             players.append(Dominion.TablePlayer(name[1:]))
         else:
             players.append(Dominion.Player(name))
+    return players
 
 def play(supply, supply_order, players, trash):
     # Play the game

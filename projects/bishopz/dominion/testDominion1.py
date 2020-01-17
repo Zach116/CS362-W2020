@@ -27,7 +27,7 @@ supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
                 6:['Gold','Adventurer'],8:['Province']}
 
 # Define what cards will be in the supply for this game
-supply = testUtility.supplyInit(box, nV, nC)
+supply = testUtility.supplyInit(box, nV, nC, len(player_names))
 
 #initialize the trash
 trash = []
