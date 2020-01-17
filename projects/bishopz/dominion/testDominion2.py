@@ -33,7 +33,7 @@ supply = testUtility.supplyInit(box, nV, nC, len(player_names))
 trash = []
 
 # Set up test data
-
+supply["Thief"] += [Dominion.Thief()] * 10
 
 # Construct the player objects
 players = testUtility.playerInit(player_names)
