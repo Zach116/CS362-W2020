@@ -8,7 +8,7 @@ def setVictoryCurse(playerCount):
         nV = 12
     else:
         nV = 8
-    nC = -10 + 10 * len(player_names)
+    nC = -10 + 10 * playerCount
 
     return (nV, nC)
 
