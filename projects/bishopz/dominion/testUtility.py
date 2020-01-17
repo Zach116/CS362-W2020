@@ -1,3 +1,6 @@
+import Dominion
+import random
+from collections import defaultdict
 
 def setVictoryCurse(playerCount):
     # Number of curses and victory cards

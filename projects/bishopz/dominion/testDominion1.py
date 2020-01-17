@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct 13 15:42:42 2015
+Created on  Oct 16 20:15:00 2020
 
-@author: tfleck
+@author: bishopz
 """
 
 import Dominion
@@ -29,7 +29,7 @@ supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
 # Define what cards will be in the supply for this game
 supply = testUtility.getSupply(box)
 
-
+# HERE HERE HJEHERHERHAJEHBRKJAHEDKJLAHSLKJDHASJKLDHJLKASDHJLKASDHJKLLAJKDHS
 #The supply always has these cards
 supply["Copper"]=[Dominion.Copper()]*(60-len(player_names)*7)
 supply["Silver"]=[Dominion.Silver()]*40
