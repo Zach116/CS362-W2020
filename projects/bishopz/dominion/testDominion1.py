@@ -17,7 +17,7 @@ player_names = ["Annie","*Ben","*Carla"]
 (nV, nC) = testUtility.setVictoryCurse(len(player_names))
 
 # Initialize the box
-box = testUtility.getBoxes(nV)
+box = testUtility.boxInit(nV)
 
 
 supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
@@ -27,7 +27,7 @@ supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
                 6:['Gold','Adventurer'],8:['Province']}
 
 # Define what cards will be in the supply for this game
-supply = testUtility.getSupply(box, nV, nC)
+supply = testUtility.suppyInit(box, nV, nC)
 
 #initialize the trash
 trash = []

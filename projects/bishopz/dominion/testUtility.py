@@ -12,7 +12,7 @@ def setVictoryCurse(playerCount):
 
     return (nV, nC)
 
-def getBoxes(nV):
+def boxInit(nV):
     # Define box
     box = {}
     box["Woodcutter"] = [Dominion.Woodcutter()] * 10
@@ -42,7 +42,7 @@ def getBoxes(nV):
     box["Throne Room"] = [Dominion.Throne_Room()] * 10
     return box
 
-def getSupply(box, nV, nC):
+def supplyInit(box, nV, nC):
     #Pick 10 cards from box to be in the supply.
     boxlist = [k for k in box]
     random.shuffle(boxlist)
